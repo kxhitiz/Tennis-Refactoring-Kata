@@ -7,7 +7,7 @@ class Player
   end
 
   def increase_score
-    score += 1
+    @score += 1
   end
 end
 
@@ -20,8 +20,6 @@ class TennisGame1
 
     @playerTwo =  Player.new(player2Name)
     @player2Name = @playerTwo.name
-    #@p1points = 0
-    #@p2points = 0
   end
 
   def playerOnePoints
@@ -34,10 +32,8 @@ class TennisGame1
 
   def won_point(playerName)
     if playerName == @player1Name
-      #@p1points += 1
       playerOne.increase_score
     else
-      #@p2points += 1
       playerTwo.increase_score
     end
   end
