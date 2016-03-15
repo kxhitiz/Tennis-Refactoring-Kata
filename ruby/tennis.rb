@@ -7,7 +7,7 @@ class Player
   end
 
   def increase_score
-    @score += 1
+    score += 1
   end
 end
 
