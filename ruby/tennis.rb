@@ -19,6 +19,8 @@ class TennisGame1
 
   def initialize(player1Name, player2Name)
     @playerOne = Player.new(player1Name)
+
+    # don't assign
     @player1Name = @playerOne.name
 
     @playerTwo =  Player.new(player2Name)
@@ -45,7 +47,7 @@ class TennisGame1
     result = ""
     tempScore = 0
 
-    # move logic to scoreboard
+    # needs to go somewhere
     if (playerOnePoints == playerTwoPoints)
       result = {
           0 => "Love-All",
