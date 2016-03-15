@@ -11,6 +11,9 @@ class Player
   end
 end
 
+class ScoreBoard
+end
+
 class TennisGame1
   attr_accessor :playerOne, :playerTwo
 
@@ -42,6 +45,7 @@ class TennisGame1
     result = ""
     tempScore = 0
 
+    # move logic to scoreboard
     if (playerOnePoints == playerTwoPoints)
       result = {
           0 => "Love-All",
@@ -66,7 +70,7 @@ class TennisGame1
         if (i==1)
           tempScore = playerOnePoints
         else
-          result+="-"
+          result +="-"
           tempScore = playerTwoPoints
         end
         result += {
